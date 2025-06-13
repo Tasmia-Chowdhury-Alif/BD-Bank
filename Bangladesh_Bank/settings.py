@@ -34,6 +34,22 @@ SECRET_KEY = env("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
+DEBUG = False
+   
+CSRF_TRUSTED_ORIGINS = ['https://.*', 'https://bd-bank-gqzo.onrender.com/',]
+
+
+# HTTPS Settings
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = False
+SECURE_SSL_REDIRECT = False
+
+# HSTS Settings
+
+SECURE_HSTS_SECONDS = 31536000
+SECURE_HSTS_PRELOAD = True
+SECURE_HSTS_INCLUDE_SUBDOMAINS = True
+
 ALLOWED_HOSTS = ["*"]
 
 
