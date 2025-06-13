@@ -109,7 +109,7 @@ WSGI_APPLICATION = 'Bangladesh_Bank.wsgi.application'
 DATABASES = {
     'default': dj_database_url.config(
         # Replace this value with your local database's connection string.
-        default='postgresql://bd_bank_postgresql_db_user:NxG0oJZmRcdcegwtY5rZbRQnWa5WFq3y@dpg-d15u6np5pdvs73e1leo0-a.oregon-postgres.render.com/bd_bank_postgresql_db',
+        default=env("EXTERNAL_DB_URL"),
     )
 }
 
